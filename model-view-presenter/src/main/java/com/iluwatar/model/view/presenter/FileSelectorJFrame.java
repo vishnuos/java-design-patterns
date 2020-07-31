@@ -1,6 +1,6 @@
-/**
+/*
  * The MIT License
- * Copyright (c) 2014-2016 Ilkka Seppälä
+ * Copyright © 2014-2019 Ilkka Seppälä
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -20,12 +20,12 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
+
 package com.iluwatar.model.view.presenter;
 
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -48,40 +48,40 @@ public class FileSelectorJFrame extends JFrame implements FileSelectorView, Acti
   /**
    * The "OK" button for loading the file.
    */
-  private JButton ok;
+  private final JButton ok;
 
   /**
    * The cancel button.
    */
-  private JButton cancel;
+  private final JButton cancel;
 
   /**
    * The information label.
    */
-  private JLabel info;
+  private final JLabel info;
 
   /**
    * The contents label.
    */
-  private JLabel contents;
+  private final JLabel contents;
 
   /**
    * The text field for giving the name of the file that we want to open.
    */
-  private JTextField input;
+  private final JTextField input;
 
   /**
    * A text area that will keep the contents of the file opened.
    */
-  private JTextArea area;
+  private final JTextArea area;
 
   /**
    * The panel that will hold our widgets.
    */
-  private JPanel panel;
+  private final JPanel panel;
 
   /**
-   * The Presenter component that the frame will interact with
+   * The Presenter component that the frame will interact with.
    */
   private FileSelectorPresenter presenter;
 
